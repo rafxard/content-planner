@@ -1,0 +1,28 @@
+.hero {
+    background-color: #436A7C;
+    border-radius: 8px;
+    padding: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_text{
+        font-size: 48px;
+        color: white;
+        font-weight: 800;
+        text-transform: uppercase;
+        flex: 1;
+    }
+
+    &_image{
+        width: 50%;
+        flex: 1;
+        
+        img {
+            float: right;
+            width: 80%;
+            object-fit: cover;
+        }
+    }
+}

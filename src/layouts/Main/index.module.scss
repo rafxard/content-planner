@@ -1,0 +1,11 @@
+.main {
+    background: linear-gradient(to bottom, #65CCC3, #277A80);
+    overflow-y: auto;
+
+    .container{
+        max-width: 1024px;
+        margin: auto;
+        margin-top: 70px;
+        padding: 24px 0;
+    }
+}

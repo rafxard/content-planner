@@ -1,0 +1,57 @@
+.register{
+    background: linear-gradient(to bottom, #65CCC3, #277A80);
+    height: 100vh;
+
+    &_container{
+        background-color: white;
+        float: right;
+        min-width: 66%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 80px;
+        box-sizing: border-box;
+
+        .title {
+            font-size: 32px;
+        }
+        
+        &_form {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .name {
+                display: flex;
+                gap: 12px;
+
+            }
+
+            .have_account{
+                font-size: 12px;
+                margin-bottom: 16px;
+                text-align: left;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+
+            .btn_submit {
+                padding: 8px;
+                background: linear-gradient(to right, #65CCC3, #277A80);
+                outline: none;
+                border: none;
+                color: white;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+}

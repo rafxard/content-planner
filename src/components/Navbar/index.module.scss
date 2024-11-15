@@ -1,0 +1,40 @@
+.navbar {
+    width: 100%;
+    color: white;
+    background-color: #65CCC3;
+
+    height: 70px;
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .navigation {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            font-size: 14px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

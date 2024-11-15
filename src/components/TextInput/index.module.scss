@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .text_input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        color: #616161;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #a5a4a4
+        }
+    }
+
+    .right_icon{
+        color: #4f4f4f;
+        cursor: pointer;
+    }
+}
