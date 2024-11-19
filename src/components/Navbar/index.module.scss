@@ -2,7 +2,6 @@
     width: 100%;
     color: white;
     background-color: #65CCC3;
-
     height: 70px;
     padding: 24px;
     box-sizing: border-box;
@@ -11,6 +10,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 
     .navigation {
         width: 100%;
@@ -22,7 +22,13 @@
 
         .logo {
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+            }
         }
 
         .list {
@@ -34,6 +40,71 @@
             a {
                 color: white;
                 text-decoration: none;
+            }
+
+            .backdrop {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .dropdown {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                cursor: pointer;
+                position: relative;
+                z-index: 4;
+
+                .chevron {
+                    transition: all 0.5s;
+
+                    &.active {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .dropdown_list {
+                    position: absolute;
+                    top: calc(100% + 8px);
+                    background-color: white;
+                    color: black;
+                    right: 0;
+                    width: 200px;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 16%);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all .5s ease-in-out;
+
+                    &_item {
+                        font-size: 12px;
+                        padding: 8px;
+                        color: rgb(62, 60, 60);
+                        border-radius: 3px;
+
+                        &:hover {
+                            background-color: #65CCC3;
+                        }
+
+                        &.disabled {
+                            pointer-events: none;
+                            background-color: #f8f8f8;
+                            color: #cdcccc;
+                            cursor: not-allowed !important;
+                        }
+                    }
+
+                    &.active {
+                        padding: 8px;
+                        max-height: 1000px;
+                    }
+                }
             }
         }
     }

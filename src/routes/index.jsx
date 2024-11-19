@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import { renderRoutes } from "./generate-routes";
+import Calendar from "../pages/Calendar";
+import Pricing from "../pages/Pricing";
 
 export const routes = [
     {
@@ -31,6 +33,18 @@ export const routes = [
                 title: 'Home page',
                 component: Home,
                 path: '/'
+            },
+            {
+                name: 'calendar-timeline',
+                title: 'Calendar Timeline',
+                component: Calendar,
+                path: '/content-planner/calendar-timeline'
+            },
+            {
+                name: 'pricing',
+                title: 'Pricing',
+                component: Pricing,
+                path: '/pricing'
             },
         ]
     }

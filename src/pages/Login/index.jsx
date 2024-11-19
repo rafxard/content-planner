@@ -17,9 +17,9 @@ const Login = () => {
           rightIconOnClick={() => {
             setPasswordType(passwordType === 'password' ? "text" : "password")
           }} />
-          <button className={styles.btn_submit}>
+          <Link to="/" className={styles.btn_submit}>
             Login
-          </button>
+          </Link>
         </div>
         <div className={styles.other_container}>
           <Link to={"/register"}>
